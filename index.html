@@ -1,51 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecell MMDU</title>
-    <link rel="icon" href="/images/Ecell_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="nav-left">
-                <a href="#" class="logo">
-                    <img src="/images/Ecell_logo.png" alt="Ecell Logo">
-                </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecell MMDU</title>
+        <link rel="icon" href="/images/Ecell_logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+       
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Esummit</a></li>
+                    <li><a href="#">Updates</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-left">
+                    <a href="#" class="logo">
+                        <img src="/images/Ecell_logo.png" alt="Ecell Logo">
+                    </a>
+                </div>
+            </nav>
+            
+            
+        </header>
+
+        <main>
+            <section class="hero-section">
+                <div class="content">
+                    <h5>Empowering tomorrow's Entrepreneurs</h5>
+                    <h1>ENTREPRENEURSHIP CELL</h1>
+                    <h3>Maharishi Markandeshwar (Deemed to be University)
+                        mullana-Ambala, Haryana</h3>
+                    <a href="#" class="cta-button">Join Us</a>
+                </div>
+            </section>
+
+            <section class="vision-section">
+                <h2>OUR VISION</h2>
+                <p>
+                    At the Entrepreneurship Cell of Maharishi Markandeshwar
+                    (Deemed to be University), Mullana-Ambala, our vision is to
+                    foster a dynamic environment where students are inspired to
+                    become innovative leaders and successful entrepreneurs. We
+                    aim to cultivate an entrepreneurial mindset by providing the
+                    tools, resources, and support needed to transform ideas into
+                    impactful ventures.
+
+                    We are dedicated to creating a culture of creativity,
+                    resilience, and collaboration, bridging the gap between
+                    theory and practice. Our goal is to empower students to
+                    drive innovation, build sustainable businesses, and
+                    contribute positively to society and the economy. Through
+                    mentorship and hands-on experience, we envision a thriving
+                    ecosystem where every student has the opportunity to realize
+                    their entrepreneurial potential.
+                </p>
+            </section>
+            <section class="what-we-do">
+                <h2>What We Do?</h2>
+                <div class="boxes">
+                    <div class="box">
+                        <img src="/images/4807.jpg" alt="Learn"
+                            class="box-image">
+                        <h3>Learn</h3>
+                        <p>We believe that the foundation of entrepreneurship
+                            lies in continuous learning. Through workshops,
+                            seminars, and guest lectures from industry experts,
+                            we equip our members with the knowledge and skills
+                            necessary to navigate the entrepreneurial landscape.
+                            Our educational initiatives cover a wide range of
+                            topics, including business strategy, finance,
+                            marketing, and innovation.</p>
+                    </div>
+                    <div class="box">
+                        <img src="/images/3156805.jpg" alt="Build"
+                            class="box-image">
+                        <h3>Build</h3>
+                        <p>Turning ideas into reality requires more than just
+                            knowledge; it needs practical experience. Our cell
+                            provides a platform for students to collaborate on
+                            projects, participate in hackathons, and develop
+                            their business concepts. We offer mentorship and
+                            support in areas such as product development,
+                            business planning, and market research, ensuring
+                            that every venture has the potential to succeed.</p>
+                    </div>
+                    <div class="box">
+                        <img src="/images/4642728.jpg" alt="Scale"
+                            class="box-image">
+                        <h3>Scale</h3>
+                        <p>Scaling a startup is a critical phase that can make
+                            or break a business. We support our entrepreneurs in
+                            scaling their ventures by connecting them with
+                            investors, industry experts, and business networks.
+                            Our programs are designed to help startups refine
+                            their business models, enhance their market
+                            presence, and achieve sustainable growth.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="events">
+                <h2>Events</h2>
+                <div class="events-container">
+                    <!-- Combined Navigation and Content Box -->
+                    <div class="combined-box">
+                        <!-- Navigation -->
+                        <div class="nav-box">
+                            <ul>
+                                <li><a href="#" data-content="powerTalks">PowerTalks & Panel Discussions</a></li>
+                                <li><a href="#" data-content="eSummit">E-Summit</a></li>
+                                <li><a href="#" data-content="startUpFair">Start-Up Fair</a></li>
+                                <li><a href="#" data-content="eNetworking">E-Networking</a></li>
+                                <li><a href="#" data-content="campusAmbassador">Campus Ambassador Program</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Content -->
+                        <div class="content-box">
+                            <div id="powerTalks" class="event-content">
+                                <h4>PowerTalks & Panel Discussions</h4>
+                                <p>Our PowerTalks and Panel Discussions feature industry leaders, successful entrepreneurs, and domain experts who share their insights and experiences. These events provide students with a unique opportunity to learn from the best in the field, ask questions, and engage in meaningful conversations about entrepreneurship, innovation, and industry trends. Whether it’s a deep dive into a specific topic or a broad discussion on the future of business, these sessions are designed to inspire and educate.</p>
+                            </div>
+            
+                            <div id="eSummit" class="event-content" style="display: none;">
+                                <h4>E-Summit</h4>
+                                <p>The E-Summit is our flagship event that brings together entrepreneurs, investors, and thought leaders from across the country. This multi-day summit includes keynote speeches, interactive workshops, and networking sessions aimed at exploring emerging trends, sharing success stories, and fostering collaboration. It’s an excellent platform for students to gain knowledge, build connections, and showcase their own entrepreneurial ventures.</p>
+                            </div>
+            
+                            <div id="startUpFair" class="event-content" style="display: none;">
+                                <h4>Start-Up Fair</h4>
+                                <p>The Start-Up Fair is an exciting event where start-ups and aspiring entrepreneurs can exhibit their ideas and innovations. This fair provides a platform for students and young entrepreneurs to showcase their projects, receive feedback from industry experts, and connect with potential investors and partners. It's a vibrant space for exploring new business ideas and discovering the latest trends in the start-up ecosystem.</p>
+                            </div>
+            
+                            <div id="eNetworking" class="event-content" style="display: none;">
+                                <h4>E-Networking</h4>
+                                <p>E-Networking events are designed to facilitate connections between students, entrepreneurs, and professionals from various industries. Through structured networking sessions, mentorship opportunities, and collaborative activities, participants can build valuable relationships, share knowledge, and explore potential collaborations. These events are crucial for expanding one's professional network and gaining insights from a diverse range of perspectives.</p>
+                            </div>
+            
+                            <div id="campusAmbassador" class="event-content" style="display: none;">
+                                <h4>Campus Ambassador Program</h4>
+                                <p>Our Campus Ambassador Program empowers enthusiastic students to represent the Entrepreneurship Cell across campus and beyond. Ambassadors play a vital role in promoting our events, engaging with their peers, and facilitating communication between the cell and the student body. This program offers valuable leadership experience, networking opportunities, and the chance to make a significant impact within the entrepreneurial community.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="image-slider-section">
+                <h2 class="image-slider-heading"><!-- heading--></h2>
+                <div class="image-slider">
+                    <div class="slider-container">
+                        <!-- Duplicate the image set for seamless scrolling -->
+                        <div class="image-set">
+                            
+                            
+                            <img src="/images/Events/day1-11.jpeg" alt="Image 3">
+                            <img src="/images/Events/day1.jpeg" alt="Image 3">
+                            <img src="/images/Events/day0.jpeg" alt="Image 1">
+                            <img src="/images/Events/day1-1.jpeg" alt="Image 2">
+                            <!-- Add more images as needed -->
+                            <!-- Ensure to add all 100 images here -->
+                        </div>
+                        <div class="image-set">
+                            <!-- Duplicate images to ensure seamless scrolling -->
+                            
+                            <!-- Add more images as needed -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+
+            
+            
+            <section class="faculty-coordinator">
+                <h2>Our Faculty Coordinator</h2>
+                <div class="coordinator-image">
+                    <img src="/images/TEAM/profilpic (1).png" alt="Dr. Vidhya S">
+                </div>
+                <div class="coordinator-info">
+                    <div class="coordinator-content">
+                        <p>We are honoured to introduce <strong>Dr. Bharti</strong>, the faculty coordinator of the Entrepreneurship Cell and also the Head of the Department of Electronics and Communication with specialization in Biomedical Engineering. Her multifaceted expertise and unwavering dedication make her a true pillar of strength within our community. Dr. Vidhya S's rich academic background, combined with her visionary leadership, has been instrumental in shaping E-Cell's trajectory. Her unwavering commitment to nurturing young minds and providing them with the tools they need to succeed sets her apart as a true mentor and guide. Under her mentorship, the Entrepreneurship Cell has flourished into a vibrant ecosystem where innovation thrives, ideas take shape, and dreams come to fruition.</p>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="team">
+                <h2>Team</h2>
+                <div class="team-members">
+                    <!-- First row with two members centered -->
+                    <div class="team-row">
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/shrishail-chavadi" target="_blank">
+                                <img src="/images/TEAM/profilpic (1).png" alt="Shrishail Chavadi">
+                                <p>Shrishail Chavadi</p>
+                                <p>Chairperson</p>
+                            </a>
+                        </div>
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/anannya-chuli" target="_blank">
+                                <img src="/images/TEAM/profilpic (1).png" alt="Anannya Chuli">
+                                <p>Anannya Chuli</p>
+                                <p>Vice Chairperson</p>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Second row with three members centered -->
+                    <div class="team-row">
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/kishika-malhotra" target="_blank">
+                                <img src="/images/TEAM/profilpic (1).png" alt="Kishika Malhotra">
+                                <p>Kishika Malhotra</p>
+                                <p>Secretary</p>
+                            </a>
+                        </div>
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/sai-himabindu-edara" target="_blank">
+                                <img src="/images/TEAM/profilpic (1).png" alt="Sai Himabindu Edara">
+                                <p>Sai Himabindu Edara</p>
+                                <p>Management Head</p>
+                            </a>
+                        </div>
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/ms-mihir" target="_blank">
+                                <img src="/images/TEAM/profilpic (1).png" alt="M S Mihir">
+                                <p>M S Mihir</p>
+                                <p>Editorial Head</p>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Third row with three members centered -->
+                    <div class="team-row">
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/shreyansh-singh-chouhan" target="_blank">
+                                <img src="/images/TEAM/profilpic (1).png" alt="Shreyansh Singh Chouhan">
+                                <p>Shreyansh Singh Chouhan</p>
+                                <p>Design Head</p>
+                            </a>
+                        </div>
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/m-palanikannan" target="_blank">
+                                <img src="/images/TEAM/profilpic (1).png" alt="M Palanikannan">
+                                <p>M Palanikannan</p>
+                                <p>Technical Head</p>
+                            </a>
+                        </div>
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/pranit-modi" target="_blank">
+                                <img src="/images/TEAM/profilpic (1).png" alt="Pranit Modi">
+                                <p>Pranit Modi</p>
+                                <p>Outreach Head</p>
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Fourth row with three members centered -->
+                    <div class="team-row">
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/yuvraj-aaditya-arya" target="_blank">
+                                <img src="/images/TEAM/profilpic (1).png" alt="Yuvraj Aaditya Arya">
+                                <p>Yuvraj Aaditya Arya</p>
+                                <p>Research and Development Head</p>
+                            </a>
+                        </div>
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/rahul-agarwal" target="_blank">
+                                <img src="/images/TEAM/profilpic (1).png" alt="Rahul Agarwal">
+                                <p>Rahul Agarwal</p>
+                                <p>Collaborations Head</p>
+                            </a>
+                        </div>
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/shubhankar-gulati" target="_blank">
+                                <img src="/images/TEAM/profilpic (1).png" alt="Shubhankar Gulati">
+                                <p>Shubhankar Gulati</p>
+                                <p>Finance Head</p>
+                            </a>
+                        </div>
+                    </div>
+            
+                    </div>
+                </div>
+            </section>
+            
+            
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h5 class="footer-title">E-Cell MMDU</h5>
+                  <p>Powering Entrepreneurship at MMDU</p>
+                  <div class="row mt-4">
+                    <div class="col-md-12">
+                      <h5 class="footer-title">Contact Details</h5>
+                      <p><strong>For website queries:</strong></p>
+                      <p>Shlok: +91 74860 74170 (Web Operations)</p>
+                      <p>Skandan: +91 95130 70731 (Web Operations)</p>
+                      <p>Email: <a href="mailto:webops_ecell@smail.mmddu.ac.in">webops_ecell@smail.mmddu.ac.in</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h5 class="footer-title">Quick Links</h5>
+                  <div class="quick-links">
+                    <a href="#">E-Summit</a>
+                    <a href="#">Sponsors</a>
+                    <a href="#">Merchandise</a>
+                    <a href="#">Access Passes</a>
+                    <a href="#">E-Cell</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h5 class="footer-title">Subscribe to Newsletter</h5>
+                  <form class="subscribe-form">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+                  </form>
+                  <h5 class="footer-title mt-4">Follow Us</h5>
+                  <div class="social-links">
+                    <a href="https://facebook.com/yourpage" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/yourprofile" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/company/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://youtube.com/yourchannel" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="footer-bottom mt-4">
+                <p>&copy; 2024 E-Cell MMDU. All Rights Reserved.</p>
+              </div>
             </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Esummit</a></li>
-                <li><a href="#">Updates</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <div class="menu-toggle" id="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
+          </footer>
+        <script src="/js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 
-    <main>
-        <div class="content">
-            <h5>Empowering tomorrow's Entrepreneurs</h5>
-            <h1>Entrepreneurship Cell</h1>
-            <h3>MMDU</h3>
-            <a href="#" class="cta-button">Join Us</a>
-        </div>
-    </main>
-
-    <footer>
-        <p>© 2024 Entrepreneurship Cell, MMDU. All rights reserved.</p>
-    </footer>
-
-    <script src="/js/script.js"></script>
-</body>
+    </body>
 </html>
