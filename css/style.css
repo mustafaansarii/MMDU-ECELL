@@ -556,21 +556,10 @@ h2 {
 
 .team-members {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
-    gap: 30px; /* Space between members */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 20px; /* Space between members */
     max-width: 1000px; /* Set a max-width for larger screens */
-    margin: 0 auto; /* Center the team members */
-}
-
-/* Adjust the first row to have 2 items */
-.team-member:nth-child(1),
-.team-member:nth-child(2) {
-    grid-column: span 1; /* Span one column */
-}
-
-/* Ensure subsequent rows have 3 items per row */
-.team-member:nth-child(n+3) {
-    grid-column: span 1; /* Default to one column */
+    margin: 0 auto; /* Center the grid */
 }
 
 .team-member {
@@ -584,8 +573,8 @@ h2 {
 }
 
 .team-member img {
-    width: 150px; /* Reduced image width */
-    height: 150px; /* Reduced image height */
+    width: 150px; /* Default image width */
+    height: 150px; /* Default image height */
     border-radius: 50%; /* Circular image */
     border: 3px solid #333; /* Border color */
     transition: transform 0.3s, box-shadow 0.3s;
@@ -602,27 +591,24 @@ h2 {
     font-size: 1rem; /* Default font size for names and roles */
 }
 
-/* Responsive Design */
+/* Responsive Design for tablets and smaller screens */
 @media (max-width: 768px) {
-    h2 {
-        font-size: 2.5rem; /* Decrease heading size */
-    }
-
     .team-members {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
-        gap: 20px; /* Space between members */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets and smaller screens */
+        gap: 15px; /* Adjust space between members */
     }
 
     .team-member img {
-        width: 120px; /* Smaller image size for smaller screens */
-        height: 120px; /* Maintain aspect ratio */
+        width: 80px; /* Smaller image size for smaller screens */
+        height: 80px; /* Maintain aspect ratio */
     }
 
     .team-member p {
-        font-size: 1rem; /* Adjusted font size for names and roles */
+        font-size: 0.9rem; /* Adjusted font size for names and roles */
     }
 }
 
+/* Responsive Design for mobile phones */
 @media (max-width: 480px) {
     h2 {
         font-size: 2rem; /* Further decrease heading size */
@@ -630,16 +616,16 @@ h2 {
 
     .team-members {
         grid-template-columns: repeat(2, 1fr); /* 2 columns on very small screens */
-        gap: 15px; /* Space between members */
+        gap: 10px; /* Adjust space between members */
     }
 
     .team-member img {
-        width: 100px; /* Further reduced image size */
-        height: 100px; /* Maintain aspect ratio */
+        width: 70px; /* Further reduced image size */
+        height: 70px; /* Maintain aspect ratio */
     }
 
     .team-member p {
-        font-size: 0.9rem; /* Further reduced font size for names and roles */
+        font-size: 0.8rem; /* Further reduced font size for names and roles */
     }
 }
 
