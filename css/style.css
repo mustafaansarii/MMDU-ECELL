@@ -175,6 +175,21 @@ main {
 }
 
 /* hero end
+/* who we are */
+.who-are-we {
+    padding: 60px 15px;
+    text-align: center;
+    background-color: #f8f9fa00;
+}
+.who-are-we h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.who-are-we p {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: justify;
+}
 
 
 /* Vision Section Styles */
@@ -189,7 +204,7 @@ main {
 }
 
 .vision-section h2 {
-    font-size: 2rem; /* Adjust size if needed */
+    font-size: 1rem; /* Adjust size if needed */
     margin-bottom: 20px;
     color: #333;
 }
