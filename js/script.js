@@ -1,27 +1,30 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const sliderContainer = document.querySelector('.slider-container');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    const totalSlides = document.querySelectorAll('.image-set img').length;
+    let currentIndex = 0;
 
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-    const links = document.querySelectorAll('.nav-box a');
-    const contents = document.querySelectorAll('.event-content');
+    function updateSliderPosition() {
+        const offset = -currentIndex * 100; // Calculate the offset based on the current index
+        sliderContainer.style.transform = `translateX(${offset}%)`;
+    }
 
-    menuToggle.addEventListener('click', function () {
-        navLinks.classList.toggle('active');
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < totalSlides - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Loop back to the first slide
+        }
+        updateSliderPosition();
     });
-    links.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault();
-            const contentId = this.getAttribute('data-content');
-            contents.forEach(content => {
-                if (content.id === contentId) {
-                    content.style.display = 'block';
-                } else {
-                    content.style.display = 'none';
-                }
-            });
-        });
+
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalSlides - 1; // Loop back to the last slide
+        }
+        updateSliderPosition();
     });
 });
-
-
-
