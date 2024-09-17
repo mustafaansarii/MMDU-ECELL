@@ -54,4 +54,6 @@ document.addEventListener('DOMContentLoaded', function() {
         index = (index >= totalImages - 1) ? 0 : index + 1;
         updateSlider();
     });
+
+    
 });

@@ -72,93 +72,34 @@ body {
 }
 
 /* Header Styles */
-header {
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: inherit;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-/* Logo */
-.logo img {
-    height: 60px;
-    transition: height 0.3s ease;
-}
 
-/* Navigation Links */
-nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
+.navbar-custom {
+    background-color: #733db0ed;
+    border-bottom-left-radius: 5%;
+    font-size: 20px;
 }
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.navbar-custom .navbar-brand, .navbar-custom .nav-link {
+    color: #ffffff;
 }
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff; /* Keep color as white */
-    font-weight: bold;
-    transition: color 0.3s;
+.navbar-custom .navbar-brand:hover, .navbar-custom .nav-link:hover {
+    color: #00E676;
 }
-
-.nav-links a:hover {
-    color: #ffcd05; /* Hover effect */
+.navbar-custom .dropdown-menu {
+    background-color: #ffffff;
 }
-
-/* Menu Toggle Button (for mobile) */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
+.navbar-custom .dropdown-item:hover {
+    background-color: #00E676;
+    color: #ffffff;
 }
-
-.menu-toggle .bar {
-    width: 25px;
-    height: 3px;
+.navbar-custom .navbar-toggler-icon {
     background-color: white;
-    margin: 3px 0;
 }
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.9); /* Background only for mobile */
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        height: 0;
-        overflow: hidden;
-        transition: height 0.3s ease-in-out;
-    }
-
-    .nav-links a {
-        padding: 15px;
-        display: block;
-        color: #fff; /* Ensure links stay white on mobile */
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .nav-links.open {
-        height: 300px; /* Adjust as per content */
-    }
+.navbar-brand img {
+    width: auto;
+    max-width: 170px;
+    height: 60px;
 }
-
-
-
 /* end of nav
 
 
@@ -187,9 +128,9 @@ main {
 /* Prevent line breaks by default */
 /* Animation for Dynamic Text Colors */
 @keyframes colorChange {
-    0% { color: #69b4ff; } /* Pink */
-    50% { color: #add8e6; } /* Blue */
-    100% { color: #ff0000; } /* Red */
+    0% { color: #213345; } /* Pink */
+    50% { color: #332c63; } /* Blue */
+    100% { color: #f54444; } /* Red */
 }
 
 .hero-section h1 {
@@ -243,7 +184,7 @@ main {
     max-width: 1100px;
     margin: 0 auto;
     background: inherit; /* Inherit background from body */
-    margin-top: -150px; /* Reduce this to move the section closer to the button */
+    margin-top: -50px; /* Reduce this to move the section closer to the button */
     margin-bottom: 1in; /* Adjust as needed */
 }
 
@@ -567,8 +508,8 @@ h2 {
 }
 
 .team-member img {
-    width: 150px; /* Default image width */
-    height: 150px; /* Default image height */
+    width: 250px; /* Default image width */
+    height: 250px; /* Default image height */
     border-radius: 50%; /* Circular image */
     border: 3px solid #333; /* Border color */
     transition: transform 0.3s, box-shadow 0.3s;
@@ -593,8 +534,8 @@ h2 {
     }
 
     .team-member img {
-        width: 80px; /* Smaller image size for smaller screens */
-        height: 80px; /* Maintain aspect ratio */
+        width: 150px; /* Smaller image size for smaller screens */
+        height: 150px; /* Maintain aspect ratio */
     }
 
     .team-member p {
@@ -603,7 +544,7 @@ h2 {
 }
 
 /* Responsive Design for mobile phones */
-@media (max-width: 480px) {
+@media (max-width: 280px) {
     h2 {
         font-size: 2rem; /* Further decrease heading size */
     }
