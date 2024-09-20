@@ -20,7 +20,7 @@
     <meta property="og:title" content="MMDU ECELL | Entrepreneurship Cell at  ">
     <meta property="og:description"
         content="Join MMDU ECELL to connect with mentors and industry experts, and turn your entrepreneurial ideas into successful ventures. We provide workshops, panel discussions, and networking opportunities for student innovators.">
-    <meta property="og:image" content="/images/e=cell=logo.png">
+    <meta property="og:image" content="/images/ecell_logo.png">
     <meta property="og:url" content="https://mmdu-ecell.vercel.app/">
 
     <!-- Twitter Card Meta Tags -->
@@ -28,7 +28,7 @@
     <meta name="twitter:title" content="MMDU ECELL | Entrepreneurship Cell at  ">
     <meta name="twitter:description"
         content="Empower your entrepreneurial ambitions with MMDU ECELL. Engage with a community of innovators through workshops, panel discussions, and networking opportunities.">
-    <meta name="twitter:image" content="/images/e=cell=logo.png">
+    <meta name="twitter:image" content="/images/ecell_logo.png">
     <meta name="twitter:url" content="https://mmdu-ecell.vercel.app/">
 
     <!-- Additional Meta Tags -->
@@ -40,12 +40,11 @@
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description"
-        content="Empowering student entrepreneurs through innovation and collaboration.">
-    <meta name="twitter:image" content="/images/e=cell=logo.png">
+    <meta name="twitter:description" content="Empowering student entrepreneurs through innovation and collaboration.">
+    <meta name="twitter:image" content="/images/ecell_logo.png">
 
     <!-- Favicon -->
-    <link rel="icon" href="/images/e=cell=logo.png" type="image/x-icon">
+    <link rel="icon" href="/images/ecell_logo.png" type="image/x-icon">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
 
 
@@ -71,7 +70,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="/images/e=cell=logo.png" alt="Logo">
+                <img src="/images/ecell_logo.png" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -141,62 +140,160 @@
 </body>
 
 <main>
+
+    <!-- Hero Section with Join Us Button -->
     <section class="hero-section">
         <div class="content">
             <h5>Empowering tomorrow's Entrepreneurs</h5>
             <h1><b>ENTREPRENEURSHIP CELL</b></h1>
-            <h3>Maharishi Markandeshwar (Deemed to be University)
-                mullana-Ambala, Haryana</h3>
-            <a href="#" class="cta-button">Join Us</a>
+            <h3>Maharishi Markandeshwar (Deemed to be University)<br>Mullana-Ambala, Haryana</h3>
+            <a href="#" class="cta-button" data-toggle="modal">Join Us</a>
+            <!-- data-target="#joinModal" -->
         </div>
     </section>
 
+    <!-- Modal for the Join Form -->
+    <div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="joinModalLabel">Join Our E-Cell</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Join Form -->
+                    <form id="joinForm" novalidate>
+                        <div class="form-group">
+                            <label for="fname">First Name:</label>
+                            <input type="text" class="form-control" id="fname" placeholder="Enter your first name"
+                                required>
+                            <div class="invalid-feedback">Please enter your first name.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" class="form-control" id="lname" placeholder="Enter your last name"
+                                required>
+                            <div class="invalid-feedback">Please enter your last name.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="institute">Institute:</label>
+                            <input type="text" class="form-control" id="institute" placeholder="Enter your institute"
+                                required>
+                            <div class="invalid-feedback">Please enter your institute name.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">Contact Number:</label>
+                            <input type="tel" class="form-control" id="contact" placeholder="Enter your contact number"
+                                pattern="[0-9]{10}" required>
+                            <div class="invalid-feedback">Please enter a valid 10-digit contact number.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="query">Any Query:</label>
+                            <textarea class="form-control" id="query" rows="3"
+                                placeholder="Enter your query (if any)"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Area of Interest:</label>
+                            <select class="form-control" id="interest" required>
+                                <option value="" disabled selected>Select your interest</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="finance">Finance</option>
+                                <option value="entrepreneurship">Entrepreneurship</option>
+                                <option value="technology">Technology</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="invalid-feedback">Please select your area of interest.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <section id="who-are-we" class="who-are-we">
         <div class="container">
-            <h1>Who are we?</h1>
+            <h1>About Us</h1>
             <p>
                 We are the Entrepreneurship Cell at Maharishi Markandeshwar (Deemed to be University), Mullana-Ambala.
-                We are a dedicated team of students and mentors passionate about fostering innovation and
-                entrepreneurship.
+                Our team is driven by a <strong>passion for fostering innovation and entrepreneurship among
+                    students</strong>.
 
-                Our mission is to create a supportive community that empowers students to turn their ideas into
-                successful ventures. We organize events such as workshops, panel discussions, and networking
-                opportunities to bridge the gap between academic knowledge and real-world application.
+                Our mission is to build a supportive community that empowers students to transform their ideas into
+                successful ventures. Through workshops, panel discussions, and networking events, we bridge the gap
+                between academic learning and real-world application.
 
-                Join us to connect with mentors, industry experts, and fellow entrepreneurs, and to take your
-                entrepreneurial ambitions to the next level.
+                Join us to connect with mentors, industry experts, and like-minded peers, and elevate your
+                entrepreneurial journey.
             </p>
         </div>
     </section>
 
     <section id="vision" class="vision-section">
-        <h2>OUR VISION</h2>
-
-        <p>
-            Our vision is to
-            foster a dynamic environment where students are inspired to
-            become innovative leaders and successful entrepreneurs. We
-            aim to cultivate an entrepreneurial mindset by providing the
-            tools, resources, and support needed to transform ideas into
-            impactful ventures.
-
-            We are dedicated to creating a culture of creativity,
-            resilience, and collaboration, bridging the gap between
-            theory and practice. Our goal is to empower students to
-            drive innovation, build sustainable businesses, and
-            contribute positively to society and the economy. Through
-            mentorship and hands-on experience, we envision a thriving
-            ecosystem where every student has the opportunity to realize
-            their entrepreneurial potential.
-        </p>
+        <div class="vision-content">
+            <div class="vision-image">
+                <img src="/images/Pasted image.png" alt="Vision Image" />
+            </div>
+            <div class="vision-text">
+                <h2>OUR VISION</h2>
+                <p>
+                    Our vision is to foster a dynamic environment where students are inspired to
+                    become innovative leaders and successful entrepreneurs. We aim to cultivate
+                    an entrepreneurial mindset by providing the tools, resources, and support
+                    needed to transform ideas into impactful ventures.
+                </p>
+                <p>
+                    We are dedicated to creating a culture of creativity, resilience, and collaboration,
+                    bridging the gap between theory and practice. Our goal is to empower students
+                    to drive innovation, build sustainable businesses, and contribute positively to
+                    society and the economy. Through mentorship and hands-on experience, we
+                    envision a thriving ecosystem where every student has the opportunity to realize
+                    their entrepreneurial potential.
+                </p>
+            </div>
+        </div>
     </section>
+
+    <section class="mission-section">
+        <h2>Our Mission</h2>
+        <div class="mission-content">
+            <p class="mission-text">
+                Our mission is to empower students to transform their ideas into successful ventures by providing a
+                supportive ecosystem that nurtures innovation and entrepreneurship. We commit to offering comprehensive
+                resources, mentorship, and practical experiences that encourage creativity, resilience, and
+                collaboration.
+
+                Through workshops, networking opportunities, and real-world projects, we aim to bridge the gap between
+                academic knowledge and entrepreneurial practice. We strive to foster a vibrant community where students
+                can learn from one another, share insights, and cultivate their entrepreneurial spirit. By championing
+                sustainable practices and social impact, we endeavor to prepare the next generation of leaders who will
+                drive economic growth and contribute positively to society.
+
+
+            </p>
+        </div>
+    </section>
+
+
+
+
+
     <section id="what-we-do" class="what-we-do">
         <h2>What We Do?</h2>
         <p>Through our vision of "Learn, Build and Scale" we implement various initiatives and events in <br> MMDU to
             foster the entrepreneurial minds and create a culture of enthralling startups bound for success!</p>
         <div class="boxes">
             <div class="box">
-                <img src="/images/4807.jpg" alt="Learn" class="box-image">
+                <img src="/images/clipart479889.png" alt="Learn" class="box-image">
                 <h3><b>Learn</b></h3>
                 <p>We believe that the foundation of entrepreneurship
                     lies in continuous learning. Through workshops,
@@ -208,7 +305,7 @@
                     marketing, and innovation.</p>
             </div>
             <div class="box">
-                <img src="/images/3156805.jpg" alt="Build" class="box-image">
+                <img src="/images/border-radius 100px;.png" alt="Build" class="box-image">
                 <h3><b>Build</b></h3>
                 <p>Turning ideas into reality requires more than just
                     knowledge; it needs practical experience. Our cell
@@ -220,7 +317,7 @@
                     that every venture has the potential to succeed.</p>
             </div>
             <div class="box">
-                <img src="/images/4642728.jpg" alt="Scale" class="box-image">
+                <img src="/images/scale-removebg-preview.png" alt="Scale" class="box-image">
                 <h3><b>Scale</b></h3>
                 <p>Scaling a startup is a critical phase that can make
                     or break a business. We support our entrepreneurs in
@@ -232,6 +329,8 @@
             </div>
         </div>
     </section>
+
+
     <section id="events" class="events">
         <h2>Events</h2>
         <div class="events-container">
@@ -305,9 +404,12 @@
 
     <section id="Gallery" class="image-slider-section">
         <h2 class="image-slider-heading">Gallery</h2>
+        <p style="text-align: center;">E-Cell brings to its participants a host of events, ranging from immersive talks
+            to exciting competitions!</p>
         <div class="image-slider">
             <div class="slider-container">
                 <div class="image-set">
+                    <img src="/images/Events/daystart.jpeg" alt="Image 1">
                     <img src="/images/Events/day1.jpeg" alt="Image 1">
                     <img src="/images/Events/day1-11.jpeg" alt="Image 2">
                     <img src="/images/Events/day0.jpeg" alt="Image 3">
@@ -320,9 +422,7 @@
         </div>
     </section>
 
-
-
-
+    <!-- faculty-coordinator -->
 
     <section id="Faculty" class="faculty-coordinator">
         <h2>Our Faculty Coordinator</h2>
@@ -331,22 +431,23 @@
         </div>
         <div class="coordinator-info">
             <div class="coordinator-content">
-                <p>We are honored to introduce <strong>Dr. Bharti Sharma</strong>, Co-Founder, Visionary & Coordinator,
-                    and Mentor at the National Entrepreneurship Challenge (IIT Bombay). She is also an Associate
-                    Professor at Maharishi Markandeshwar Institute of Computer Technology and Business Management
-                    (MMICTBM), Maharishi Markandeshwar (Deemed to be University) (MMDU). Her multifaceted expertise and
-                    unwavering dedication make her a true pillar of strength within our community. Dr. Sharma's rich
-                    academic background, combined with her visionary leadership, has been instrumental in shaping the
-                    E-Cell's trajectory. Her commitment to nurturing young minds and providing them with the tools they
-                    need to succeed sets her apart as a true mentor and guide. Under her mentorship, the
-                    Entrepreneurship Cell has flourished into a vibrant ecosystem where innovation thrives, ideas take
-                    shape, and dreams come to fruition.</p>
+                <p>We are honored to introduce <strong>Dr. Bharti Sharma</strong>, Co-Founder and visionary leader of
+                    MMDU E-Cell, and Mentor at the National Entrepreneurship Challenge (IIT Bombay). She also serves as
+                    an Associate Professor at the Maharishi Markandeshwar Institute of Computer Technology and Business
+                    Management (MMICTBM), Maharishi Markandeshwar (Deemed to be University) (MMDU). Dr. Sharma’s
+                    multifaceted expertise and unwavering dedication have made her a cornerstone of our community. With
+                    a rich academic background and visionary leadership, she has played an instrumental role in shaping
+                    the journey of the E-Cell. Her commitment to nurturing young entrepreneurs and equipping them with
+                    the skills and knowledge to succeed distinguishes her as a true mentor and guide. Under her
+                    leadership, the Entrepreneurship Cell has grown into a thriving ecosystem where innovation
+                    flourishes, ideas come to life, and dreams are realized.</p>
             </div>
 
         </div>
     </section>
     <section class="team">
         <h2>Team</h2>
+        <p style="text-align: center;">Contact us for any queries, questions, or ideas.</p>
         <div id="team-members" class="team-members">
             <div class="team-member">
                 <a href="https://www.linkedin.com/in/himani-bansal-3b1406232/" target="_blank">
@@ -508,7 +609,11 @@
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="/js/login.js"></script>
+<script src="/js/joinus.js"></script>
 </body>
 
 </html>

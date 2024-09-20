@@ -75,7 +75,7 @@ body {
 /* Custom Navbar Styles */
 /* Custom background color for the navbar */
 .navbar-custom {
-    background-color: rgba(44, 164, 208, 0.766);/* Change this to your desired navbar background color */
+    background-color: rgba(226, 226, 226, 0.766);/* Change this to your desired navbar background color */
     margin-top: -15px;
     font-size: 18px;
     
@@ -85,7 +85,7 @@ body {
 }
 /* Custom font color for the navbar links */
 .navbar-custom .nav-link {
-    color: #ffffff; /* White color for text */
+    color: #000000; /* White color for text */
 }
 
 /* Custom font color for dropdown items */
@@ -116,8 +116,10 @@ body {
 }
 .navbar-custom img{
     height: 50px;
-    margin-left: 10px;
-    margin-bottom: -10px;
+    width: 70px;
+    margin-left: 15px;
+    margin-bottom: -9px;
+    margin-top: 5px;
 }
 
 
@@ -173,6 +175,8 @@ main {
     color: #333;
 }
 
+
+
 /* Responsive styling for smaller screens */
 @media (max-width: 558px) {
     .hero-section h5 {
@@ -195,6 +199,23 @@ main {
     }
 }
 
+/* Button Styles */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f33c79;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Adjust this value if needed */
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d81b60;
+}
+
 /* hero end
 /* who we are */
 .who-are-we {
@@ -212,62 +233,175 @@ main {
     text-align: justify;
 }
 
-
 /* Vision Section Styles */
 .vision-section {
     padding: 40px 20px;
-    text-align: center;
     max-width: 1100px;
     margin: 0 auto;
-    background: inherit; /* Inherit background from body */
-    margin-top: -50px; /* Reduce this to move the section closer to the button */
-    margin-bottom: 1in; /* Adjust as needed */
+    background: inherit;
+    margin-top: -10px;
+    margin-bottom: 1in;
+}
+
+.vision-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between image and text */
+    position: relative;
+}
+
+.vision-image {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+.vision-image img {
+    margin-top: 70px;
+    max-width: 100%;
+    height: auto;
+    width: 600px;
+    height:340px;
+}
+
+.vision-text {
+    flex: 1;
+    text-align: justify;
+    color: #333333;
+    font-size: 1rem; /* Decreased text size */
+    line-height: 1.4;
+    padding-left: 20px; /* Spacing between the vertical line and text */
+    margin-top: 50px;
+}
+
+/* Vertical Line Between Image and Text */
+.vision-content::before {
+    margin-top: 70px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ff3df5; /* Line color */
+    transform: translateX(-50%);
 }
 
 .vision-section h2 {
-    font-size: 1rem; /* Adjust size if needed */
-    margin-bottom: 20px;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
     color: #333;
+    text-align: center;
+    background: rgba(255, 255, 255, 0); /* Optional: add background to highlight text */
+    padding: 10px 20px; /* Optional: padding around the h2 */
 }
 
-.vision-section p {
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .vision-content {
+        flex-direction: column; /* Stack image and text on top of each other */
+        text-align: center; /* Center text on mobile */
+    }
+
+    .vision-image {
+        margin-bottom: 20px; /* Adds spacing below the image on mobile */
+    }
+
+    .vision-image img {
+        width: 100%; /* Set image width to 100% of container */
+        max-width: 380px; /* Restrict max width to 370px */
+        height: auto; /* Auto-adjust height to maintain aspect ratio */
+        
+    }
+
+    .vision-content::before {
+        display: none; /* Remove vertical line on mobile */
+    }
+
+    .vision-text {
+        font-size: 0.9rem; /* Further reduce text size for mobile */
+        padding-left: 0; /* Remove padding on mobile */
+    }
+
+    .vision-section h2 {
+        position: static;
+        transform: none;
+        font-size: 2rem; /* Adjust font size for mobile */
+        margin-bottom: 20px;
+    }
+}
+
+/* mission */
+.mission-section {
+    padding: 40px 20px;
+    max-width: 1100px;
     margin: 0 auto;
+    background: inherit; /* Maintains the background of the parent */
+    position: relative; /* Allows for absolute positioning of child elements */
+    margin-top: -40px
+}
+
+.mission-section h2 {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    background: rgba(255, 255, 255, 0); /* Optional: background to highlight text */
+    padding: 10px 20px; /* Optional: padding around the h2 */
+}
+
+.mission-text {
     text-align: justify;
-    line-height: 1.6;
-    color: #333;
+    color: #333333;
+    font-size: 1rem; /* Adjusted text size */
+    line-height: 1.4;
+    margin-top: 10px; /* Space above the text */
+    border: 1px solid rgba(1, 58, 104, 0.624); /* Adds a black border around the paragraph */
+    padding: 10px; /* Optional: padding inside the paragraph */
+    border-radius: 5px; /* Optional: rounds the corners */
 }
 
-/* Button Styles */
-.cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #ec407a;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px; /* Adjust this value if needed */
-    transition: background-color 0.3s;
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .mission-section {
+        padding: 20px; /* Adjust padding for mobile */
+        margin-top: -70px;
+    }
+
+    .mission-section h2 {
+        position: static; /* Remove absolute positioning */
+        transform: none; /* Reset transformation */
+        font-size: 2rem; /* Adjust font size for mobile */
+        margin-bottom: 20px; /* Space below the heading */
+        text-align: center; /* Center heading on mobile */
+    }
+
+    .mission-text {
+        font-size: 0.9rem; /* Reduce text size for mobile */
+        margin-top: 20px; /* Adjust margin for mobile */
+        padding: 10px; /* Adjust padding for mobile */
+    }
 }
 
-.cta-button:hover {
-    background-color: #d81b60;
+@media (max-width: 480px) {
+    .mission-section h2 {
+        font-size: 2rem; /* Further reduce font size for smaller screens */
+    }
+
+    .mission-text {
+        font-size: 0.9rem; /* Further reduce text size for smaller screens */
+    }
 }
 
-.vision-section h2 {
-    font-size: 3rem; /* Increase font size as needed */
-    margin-bottom: 20px;
-    color: #333;
-}
+/* hat-we-do */
 
-.vision-section p {
-    font-size: 1.25rem; /* Increase font size as needed */
-    margin: 0 auto;
-    text-align: justify;
-    line-height: 1.6;
-    color: #333;
-    max-width: 100%; /* Ensure text spans full width of container */
-}
 .what-we-do {
     padding: 40px 20px;
     text-align: center;
@@ -281,45 +415,55 @@ main {
     color: #333;
 }
 
-
 .boxes {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: center;
-    gap: 1in; /* Horizontal gap of 1 inch between boxes */
-
+    gap: 1in; /* Horizontal gap between boxes */
 }
 
 .box {
-    background: #fff; /* White background for boxes */
-    padding: 20px;
-    border-radius: 8px;
+    background: #ffffff00; /* White background for boxes */
+    padding: 15px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 350px; /* Adjust width as needed */
     text-align: center;
     box-sizing: border-box; /* Ensure padding is included in the width */
     margin-bottom: 1in; /* Vertical margin between boxes */
     
+    /* Multi-color border */
+    border: 2px solid;
+    border-radius: 20px;
+    border-image: linear-gradient(to right, #2222226f, #1e90ff, #81f781, #ff69b4);
+    border-image-slice: 1;
+    
 }
-.box p{
+.box::before {
+    content: '';
+    position: absolute;
+    border-radius: 400px;
+}
+
+.box p {
     text-align: justify;
 }
 
 .box-image {
-    width: 200px; /* Increased size of the image */
+    width: 200px; /* Image width */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 15px; /* Space between image and text */
 }
 
 .box h3 {
-    font-size: 1.75rem; /* Adjust size as needed */
+    font-size: 1.5rem; /* Adjust size as needed */
     margin-bottom: 10px;
     color: #333;
 }
 
 .box p {
     font-size: 1rem; /* Adjust size as needed */
-    color: #333;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -334,6 +478,7 @@ main {
         width: 100%; /* Full width for each box on small screens */
         max-width: 400px; /* Optional: Limit the maximum width */
         margin-bottom: 0.3in; /* Reduced vertical margin between boxes */
+        height: 450px;
     }
 }
 
@@ -348,8 +493,7 @@ main {
     }
 
     .box-image {
-        width: 200px; /* Adjust image size for very small screens */
-        
+        width: 180px; /* Adjust image size for very small screens */
     }
 
     .box h3 {
@@ -360,6 +504,9 @@ main {
         font-size: 0.9rem; /* Adjust font size for very small screens */
     }
 }
+
+
+/* events */
 .events {
     padding: 40px 20px;
     background: inherit; /* Inherit background from body */
@@ -459,6 +606,86 @@ h2 {
         box-shadow: none; /* Remove shadow on smaller screens if needed */
     }
 }
+
+/* Gallery */
+/* image slider */
+/* Global Slider Styles */
+.image-slider {
+    width: 100%; /* Responsive width */
+    max-width: 1100px; /* Max width */
+    height: 600px; /* Default height */
+    overflow: hidden; /* Hide overflow to only show visible images */
+    position: relative;
+    margin: 0 auto; /* Center the slider horizontally */
+}
+
+.slider-container {
+    display: flex;
+    width: 100%; /* Single image view at a time */
+    height: 100%;
+    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+}
+
+
+
+.image-set {
+    display: flex;
+    width: 100%; /* Full width for one image */
+}
+
+.image-set img {
+    width: 100%; /* Responsive width */
+    height: 100%; /* Responsive height */
+    object-fit: cover; /* Ensure images cover the container without distortion */
+}
+
+/* Slider Navigation Buttons */
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffffa2;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* Responsive Styles for Tablets and Small Screens */
+@media (max-width: 668px) {
+    .image-slider {
+        height: 400px;
+    }
+
+    .image-set img {
+        height: 400px;
+    }
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 480px) {
+    .image-slider {
+        height: 250px;
+    }
+
+    .image-set img {
+        height: 250px;
+    }
+}
+
+/* faculty-coordinator  */
+
 .faculty-coordinator {
     padding: 40px 20px;
     background: inherit; /* Inherit background from body */
@@ -602,79 +829,6 @@ h2 {
 
 
 
-/* image slider */
-/* Global Slider Styles */
-.image-slider {
-    width: 100%; /* Responsive width */
-    max-width: 1100px; /* Max width */
-    height: 600px; /* Default height */
-    overflow: hidden; /* Hide overflow to only show visible images */
-    position: relative;
-    margin: 0 auto; /* Center the slider horizontally */
-}
-
-.slider-container {
-    display: flex;
-    width: 100%; /* Single image view at a time */
-    height: 100%;
-    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
-}
-
-.image-set {
-    display: flex;
-    width: 100%; /* Full width for one image */
-}
-
-.image-set img {
-    width: 100%; /* Responsive width */
-    height: 100%; /* Responsive height */
-    object-fit: cover; /* Ensure images cover the container without distortion */
-}
-
-/* Slider Navigation Buttons */
-.prev-button, .next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 24px;
-    z-index: 1;
-    border-radius: 50%;
-}
-
-.prev-button {
-    left: 10px;
-}
-
-.next-button {
-    right: 10px;
-}
-
-/* Responsive Styles for Tablets and Small Screens */
-@media (max-width: 668px) {
-    .image-slider {
-        height: 400px;
-    }
-
-    .image-set img {
-        height: 400px;
-    }
-}
-
-/* Responsive Styles for Mobile Devices */
-@media (max-width: 480px) {
-    .image-slider {
-        height: 250px;
-    }
-
-    .image-set img {
-        height: 250px;
-    }
-}
 
 /* footer */
 @keyframes scroll {
