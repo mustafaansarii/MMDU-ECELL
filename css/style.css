@@ -260,7 +260,7 @@ main {
 .vision-image img {
     margin-top: 70px;
     max-width: 100%;
-    height: 400px;
+    height: 350px;
     width: 600px;
     height:340px;
 }
@@ -314,7 +314,7 @@ main {
     .vision-image img {
         width: 400px; /* Set image width to 100% of container */
         max-width: 100%; /* Restrict max width to 370px */
-        height: 250px; /* Auto-adjust height to maintain aspect ratio */
+        height: 200px; /* Auto-adjust height to maintain aspect ratio */
         
     }
 
