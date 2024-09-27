@@ -1,63 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Cell</title>
-    <link rel="stylesheet" href="/assests/static/styles.css">
-    <link rel="stylesheet" href="/Team/assets/static/css/9e1018c38167c3b3.css">
+    <title>Responsive Stylish Navbar</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="/assests/static/nav.css">
 
 </head>
-
-<body> <div id="__next">
-    <div class="w-full h-full font-sans">
-        <div class="aurora aur1"></div>
-        <div class="aurora aur2"></div>
-        <div class="aurora aur3"></div>
-        <nav class="w-full pb-0.5 gradient-bg sticky top-0 z-10">
-            <div class="w-full flex items-center justify-between flex-wrap px-10 bg-black">
-                <div class="flex items-center flex-shrink-0 text-white mr-6">
-                    <img class="navbar-logo" alt="" src="/assests/images/ecell_logo.png" />
-                </div>
-                <div class="block md:hidden">
-                    <button id="menu-toggle" class="flex items-center px-3 py-2 rounded text-white hover:text-white hover:border-white">
-                        <img src="/assests/images/icons8-menu-48.png" alt="Menu Icon" />
-                    </button>
-                </div>
+<body>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <header>
+        <nav class="nav-unique">
+            <a href="/"><img src="/assets/images/ecell_logo.png" alt="Logo" class="logo"></a>
+            <div class="menu-toggle" id="menuToggle">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="#who-are-we">About us</a></li>
+                <li><a href="#vision">Vision</a></li>
                 
-                <div id="nav-menu" class="w-full block flex-grow md:flex md:items-center md:w-auto hidden md:block">
-                    <div class="text-sm md:flex-grow md:text-right">
-                        <a href="https://mmdu-ecell.vercel.app/" class="block mt-4 md:inline-block md:mt-0 text-mid-gray hover:text-white mr-6">HOME</a>
-                        <a href="#/blog" class="block mt-4 md:inline-block md:mt-0 text-mid-gray hover:text-white mr-6">BLOGS</a>
-                        <a href="#/team#footer" class="block mt-4 md:inline-block md:mt-0 text-mid-gray hover:text-white mr-6">CONTACT</a>
-                        <div class="relative group mr-6 md:inline-block block mt-4 md:mt-0 text-mid-gray hover:text-white">
-                            <button class="flex flex-row items-center w-full text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none">
-                                <span>INITIATIVES</span>
-                            </button>
-                            <div class="absolute z-10 hidden group-hover:block">
-                                <div class="px-4 py-2 w-[150%] bg-black shadow-lg rounded border border-mid-gray">
-                                    <div class="flex flex-col text-left">
-                                        <a class="pb-4 text-mid-gray hover:text-white" href="#/event/teamup">TEAMUP</a>
-                                        <a class="pb-4 text-mid-gray hover:text-white" href="#/event/Eupdates">E-UPDATES</a>
-                                        <a class="pb-4 text-mid-gray hover:text-white" href="#/event/startup-series">STARTUP SERIES</a>
-                                        <a class="pb-4 text-mid-gray hover:text-white" href="#/event/Plandemic">PLANDEMIC</a>
-                                        <a class="pb-4 text-mid-gray hover:text-white" href="#/event/Ideathon">IDEATHON</a>
-                                        <a class="text-mid-gray hover:text-white pb-4" href="https://mmdu-ecell.vercel.app/#events">OTHER EVENTS</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="https://mmdu-ecell.vercel.app//Sponsors" class="block mt-4 md:inline-block md:mt-0 text-mid-gray hover:text-white">PAST SPONSORS</a>
-                    </div>
-                </div>
-            </div>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery-section">Gallery</a></li>
+                <li><a href="/Team/">Team</a></li>
+                <li class="dropdown">
+                    <a href="#">Initiatives </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Team/">TeamUp</a></li>
+                        <li><a href="#">E-Updates</a></li>
+                        <li><a href="#">CA Programme</a></li>
+                        <li><a href="#">Plandemic</a></li>
+                        <li><a href="#">Ideathon</a></li>
+                        <li><a href="#">Other Events</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Join us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Register</a></li>
+                        <li><a href="#">E-Updates</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
         </nav>
-    </div>
-</div>
-
+    </header>
 
     <main>
         <!-- Hero Section with Join Us Button -->
@@ -66,6 +55,13 @@
                 <h5>Empowering tomorrow's Entrepreneurs</h5>
                 <h1><b>ENTREPRENEURSHIP CELL</b></h1>
                 <h3>Maharishi Markandeshwar (Deemed to be University)<br>Mullana-Ambala, Haryana</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.instagram.com/ecell_mmdu_" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/e-cell-mmdu" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/ecellmmmdu" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://facebook.com/ecellmmmdu" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://youtube.com/ecellmmmdu" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
                 <a href="#" class="cta-button">Join Us</a>
                 <a href="#" class="contact-button">
                     <i class="fas fa-phone"></i> Contact Us
@@ -99,16 +95,16 @@
                 <div class="vision-image">
                     <div class="image-slider">
                         <div class="slide">
-                            <img src="/assests/images/demo1.jpg" alt="Vision Image 1" />
+                            <img src="/Events/assets/images/demo1.jpg" alt="Vision Image 1" />
                         </div>
                         <div class="slide">
-                            <img src="/assests/images/demo2.jpg" alt="Vision Image 2" />
+                            <img src="/Events/assets/images/demo2.jpg" alt="Vision Image 2" />
                         </div>
                         <div class="slide">
-                            <img src="/assests/images/demo3.jpg" alt="Vision Image 3" />
+                            <img src="/Events/assets/images/demo3.jpg" alt="Vision Image 3" />
                         </div>
                         <div class="slide">
-                            <img src="/assests/images/demo1.jpg" alt="Vision Image 4" />
+                            <img src="/Events/assets/images/day1_admin.jpeg" alt="Vision Image 4" />
                         </div>
                     </div>
                 </div>
@@ -138,31 +134,199 @@
             </p>
         </section>
 
-<!--         
-        
-        
-        <section class="our-collaborations">
-            <h2>OUR COLLABORATIONS</h2>
-            <div class="slider">
-                <div class="slider-track">
-                    <div class="slide"><img src="/assests/images/ecel iit.png" alt="Collaboration 1" /></div>
-                    <div class="slide"><img src="/assests/images/ecel iit.png" alt="Collaboration 2" /></div>
-                    <div class="slide"><img src="/assests/images/ecel iit.png" alt="Collaboration 3" /></div>
-                    <div class="slide"><img src="/assests/images/ecel iit.png" alt="Collaboration 4" /></div>
-                    <div class="slide"><img src="/assests/images/ecel iit.png" alt="Collaboration 5" /></div>
-                    <!-- Add more collaboration items as needed -->
+
+    <section id="events" class="events">
+        <h2>Events</h2>
+        <div class="events-container">
+            <!-- Combined Navigation and Content Box -->
+            <div class="combined-box">
+                <!-- Navigation -->
+                <div class="nav-box">
+                    <ul>
+                        <li><a href="#" data-content="powerTalks" style="color: #4e58c8;"><b>PowerTalks & Panel Discussions</b></a></li>
+                        <li><a href="#" data-content="eSummit" style="color: #4e58c8;"><b>E-Summit</b></a></li>
+                        <li><a href="#" data-content="startUpFair" style="color: #4e58c8;"><b>Start-Up Fair</b></a></li>
+                        <li><a href="#" data-content="eNetworking"style="color: #4e58c8;"><b>E-Networking</b></a></li>
+                        <li><a href="#" data-content="campusAmbassador"style="color: #4e58c8;"><b>Campus Ambassador Program</b></a></li>
+                    </ul>
+                </div>
+
+                <!-- Content -->
+                <div class="content-box">
+                    <div id="powerTalks" class="event-content">
+                        <h4 style="color: #9f27cfe1;">PowerTalks & Panel Discussions</h4>
+                        <p>Our PowerTalks and Panel Discussions feature industry leaders, successful entrepreneurs, and
+                            domain experts who share their insights and experiences. These events provide students with
+                            a unique opportunity to learn from the best in the field, ask questions, and engage in
+                            meaningful conversations about entrepreneurship, innovation, and industry trends. Whether
+                            it’s a deep dive into a specific topic or a broad discussion on the future of business,
+                            these sessions are designed to inspire and educate.</p>
+                    </div>
+
+                    <div id="eSummit" class="event-content" style="display: none;">
+                        <h4 style="color: #9f27cfe1;">E-Summit</h4>
+                        <p>The E-Summit is our flagship event that brings together entrepreneurs, investors, and thought
+                            leaders from across the country. This multi-day summit includes keynote speeches,
+                            interactive workshops, and networking sessions aimed at exploring emerging trends, sharing
+                            success stories, and fostering collaboration. It’s an excellent platform for students to
+                            gain knowledge, build connections, and showcase their own entrepreneurial ventures.</p>
+                    </div>
+
+                    <div id="startUpFair" class="event-content" style="display: none;">
+                        <h4 style="color: #9f27cfe1;">Start-Up Fair</h4>
+                        <p>The Start-Up Fair is an exciting event where start-ups and aspiring entrepreneurs can exhibit
+                            their ideas and innovations. This fair provides a platform for students and young
+                            entrepreneurs to showcase their projects, receive feedback from industry experts, and
+                            connect with potential investors and partners. It's a vibrant space for exploring new
+                            business ideas and discovering the latest trends in the start-up ecosystem.</p>
+                    </div>
+
+                    <div id="eNetworking" class="event-content" style="display: none;">
+                        <h4 style="color: #9f27cfe1;">E-Networking</h4>
+                        <p>E-Networking events are designed to facilitate connections between students, entrepreneurs,
+                            and professionals from various industries. Through structured networking sessions,
+                            mentorship opportunities, and collaborative activities, participants can build valuable
+                            relationships, share knowledge, and explore potential collaborations. These events are
+                            crucial for expanding one's professional network and gaining insights from a diverse range
+                            of perspectives.</p>
+                    </div>
+
+                    <div id="campusAmbassador" class="event-content" style="display: none;">
+                        <h4 style="color: #9f27cfe1;">Campus Ambassador Program</h4>
+                        <p>Our Campus Ambassador Program empowers enthusiastic students to represent the
+                            Entrepreneurship Cell across campus and beyond. Ambassadors play a vital role in promoting
+                            our events, engaging with their peers, and facilitating communication between the cell and
+                            the student body. This program offers valuable leadership experience, networking
+                            opportunities, and the chance to make a significant impact within the entrepreneurial
+                            community.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-         -->
+        </div>
+    </section>
+
+    <div id="collaboration-section" class="collaboration-section">
+        <h2 style="color: #c1c1c1;">Our Collaborators</h2>
+        <div class="collaboration-slider">
+            <div><img src="/assets/images/iit_bombay.png" alt="Collaborator 1"></div>
+            <div><img src="/assets/images/nec.png" alt="Collaborator 2"></div>
+            <div><img src="/assets/images/iit_bombay.png" alt="Collaborator 1"></div>
+            <div><img src="/assets/images/nec.png" alt="Collaborator 2"></div>
+            <div><img src="/assets/images/iit_bombay.png" alt="Collaborator 1"></div>
+            <div><img src="/assets/images/nec.png" alt="Collaborator 2"></div>
+            <div><img src="/assets/images/iit_bombay.png" alt="Collaborator 1"></div>
+            <div><img src="/assets/images/nec.png" alt="Collaborator 2"></div>
+            <div><img src="/assets/images/iit_bombay.png" alt="Collaborator 1"></div>
+            <div><img src="/assets/images/nec.png" alt="Collaborator 2"></div>
+            <div><img src="/assets/images/iit_bombay.png" alt="Collaborator 1"></div>
+            <div><img src="/assets/images/nec.png" alt="Collaborator 2"></div>
+            <!-- Add more logos as needed -->
+        </div>
+    </div>
+
+        <div class="initiatives-section">
+        <h2>Initiatives</h2>
+        <div class="event-description">
+            <p>Every year, we play host to our flagship event, <strong>E-Summit</strong>. E-Summit 2024, themed around <strong>Soaring Through Shifts</strong> is a 4-Conclave model including Youth Conclave, Innovators' Conclave, Startup Conclave, and StartUp Essentials along with the social campaign Udaan.</p>
+        </div>
+        <div class="initiatives-grid">
+            <div class="initiative-item">Lecture Series</div>
+            <div class="initiative-item">Competitive Events</div>
+            <div class="initiative-item">Startup Corner</div>
+            <div class="initiative-item">Mentorship Programme</div>
+            <div class="initiative-item">Editorial Corner</div>
+            <div class="initiative-item">Competitive Associations</div>
+        </div>
+    </div>
         
 
+    <div id="gallery-section" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/Events/assets/images/day1_admin.jpeg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/Events/assets/images/idea_pitch.jpeg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="/Events/assets/images/idea_pitch2.jpeg" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="/Events/assets/images/day1_admin.jpeg" alt="Gallery Image 4">
+            </div>
+        </div>
+    </div>
 
 
-        
-    </main>
+    <div id="contact-form" class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <div class="error-message" id="nameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email">
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+                <div class="error-message" id="messageError"></div>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3 css-oakk83">
+        <div class="footer-content">
+            <!-- Quick Links Section -->
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#collaboration-section">Collaborations</a></li>
+                    <li><a href="/Team/">Team</a></li>
+                    <li><a href="#ca-programme">CA Programme</a></li>
+                    <li><a href="#e-summit">E-Summit</a></li>
+                    <li><a href="#ecell-MMDU">Ecell MMDU</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.instagram.com/ecell_mmdu_" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/e-cell-mmdu" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/ecellmmmdu" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://facebook.com/ecellmmmdu" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://youtube.com/ecellmmmdu" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Us Section -->
+            <div class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> MMICTBM campus, MMDU mullana-Ambala 133207 (Haryana)</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ecellmmdumullana@gmail.com">ecellmmdumullana@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+919466811281">Dr. Bharti Sharma: +919466811281 (Faculty Coordinator)</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+919466252805">Himani Bansal: +919466252805 (Lead)</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+919973417743">Mustafa: +919973417743 (Web Head)</a></p>
+                
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/vision-slider.js"></script>
+    <script src="/assets/js/event.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/assets/js/collaboration.js"></script>
+    <script src="/assets/js/contact.js"></script>
 </body>
-<script src="/assests/static/js/image_slide.js"></script>
-<script src="/assests/static/js/collaboration.js"></script>
-<script src="/assests/static/js/nav.js"></script>
 </html>
