@@ -64,31 +64,34 @@
             <div class="menu-toggle" id="menuToggle">&#9776;</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="/">Home</a></li>
-                <li><a href="#who-are-we">About us</a></li>
-                <li><a href="#vision">Vision</a></li>
+                <li class="dropdown">
+                    <a href="#">About us</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#who-are-we">Who we are</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        
+                    </ul>
+                </li>
                 
-                <li><a href="#events">Events</a></li>
-                <li><a href="#gallery-section">Gallery</a></li>
-                <li><a href="/Team/">Team</a></li>
                 <li class="dropdown">
                     <a href="#">Initiatives </a>
                     <ul class="dropdown-menu">
                         <li><a href="/Team/">TeamUp</a></li>
-                        <li><a href="#">E-Updates</a></li>
+                        <li><a href="#gallery-section">Gallery</a></li>
                         <li><a href="#">CA Programme</a></li>
-                        <li><a href="#">Plandemic</a></li>
                         <li><a href="#">Ideathon</a></li>
-                        <li><a href="#">Other Events</a></li>
+                        <li><a href="#events">Events</a></li>
                     </ul>
                 </li>
+                <li><a href="/Team/">Team</a></li>
                 <li class="dropdown">
                     <a href="#">Join us</a>
                     <ul class="dropdown-menu">
                         <li><a href="">Register</a></li>
-                        <li><a href="#">E-Updates</a></li>
+                        <li><a href="#">Login</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact-form">Contact</a></li>
+                <li><a href="#contact-form">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -287,21 +290,45 @@
 
     <div id="gallery-section" class="gallery-section">
         <h2>Gallery</h2>
+        <div style="border: none;" class="gallery-description">
+            <p style="border: none; color: white;">Explore our event highlights through the gallery.</p>
+        </div>
         <div class="gallery-grid">
             <div class="gallery-item">
                 <img src="/Events/assets/images/day1_admin.jpeg" alt="Gallery Image 1">
+                <div class="overlay-text">
+                    <p>Event Day 1: Admin Activities</p>
+                    <p>Our dedicated team worked tirelessly to ensure the success of the event. From setting up the venue to coordinating with participants, every detail was meticulously planned.</p>
+                   
+                </div>
             </div>
             <div class="gallery-item">
                 <img src="/Events/assets/images/idea_pitch.jpeg" alt="Gallery Image 2">
+                <div class="overlay-text">
+                    <p>Idea Pitch Session</p>
+                    <p>Participants presented their innovative ideas, showcasing creativity and strategic thinking. Each pitch brought unique solutions to real-world challenges.</p>
+                
+                </div>
             </div>
             <div class="gallery-item">
                 <img src="/Events/assets/images/idea_pitch2.jpeg" alt="Gallery Image 3">
+                <div class="overlay-text">
+                    <p>Second Idea Pitch Session</p>
+                    <p>This session highlighted the depth of talent among our participants. Ideas ranged from technological innovations to sustainable practices.</p>
+                   
+                </div>
             </div>
             <div class="gallery-item">
                 <img src="/Events/assets/images/day1_admin.jpeg" alt="Gallery Image 4">
+                <div class="overlay-text">
+                    <p>Wrap Up of Day</p>
+                    <p>As the day concluded, we reflected on the key highlights and successes. The camaraderie among participants was heartwarming and energizing.</p>
+                    
+                </div>
             </div>
         </div>
     </div>
+    
 
 
     <div id="contact-form" class="contact-form">
