@@ -5,7 +5,7 @@
     --background-color: black; /* Navbar background color */
     --text-color: #ecf0f1; /* Text color for nav links */
     --hover-color: #e74c3c; /* Hover background color for nav links */
-    --border-color-gradient: linear-gradient(90deg, #f39c12, #e74c3c, #2980b9); /* Dynamic border gradient */
+    --border-color-gradient: linear-gradient(-45deg, #BA2463 -150%, rgb(58, 16, 68) 50%, #7322FF 250%); /* Dynamic border gradient */
     --border-color-hover: #e74c3c; /* Border color on hover */
 }
 
